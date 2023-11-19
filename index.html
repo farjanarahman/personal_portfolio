@@ -1,43 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- lottie animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
 </head>
+
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="'images/logo.png" class="logo" alt="">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                <!-- <img src="images/logo.png" class="logo" alt=""> -->
+                <h1 class="logo"><span class="f">F</span>arjana's <span class="accent">Portfolio</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Web Developer</p>
+                <p class="auto-type"></p>
                 <h1>Hi, I am <span>Farjana Rahman</span> <br> from Bangladesh</h1>
+                <button class="btn">
+                    <a href='images/my-resume.pdf' download class='me-1'>Download Resume <i class="fa-solid fa-download"></i></a>
+                </button>
             </div>
         </div>
     </div>
-<!-- ---------About-------- -->
+    <!-- ---------About-------- -->
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png" alt="">
+                    <!-- <img src="images/user.png" alt=""> -->
+                    <div class="lottie" data-animation-path="images/animation2.json">
+                    </div>
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, quidem, labore facilis animi enim nobis totam assumenda ullam a, nostrum temporibus quisquam facere. Facilis obcaecati eaque adipisci voluptas unde. Ducimus accusamus amet assumenda, perferendis dolores distinctio rerum laborum dicta odio possimus obcaecati tempore omnis illum laudantium ab porro consequuntur expedita corporis corrupti! Quo consequuntur, magnam perspiciatis quos odio aliquid nisi expedita itaque quidem cum sunt repudiandae veniam doloribus dolor neque. Deleniti, officiis sapiente nulla rerum consequatur error quidem necessitatibus eligendi deserunt iste debitis nobis totam hic dignissimos. Similique velit magni excepturi aut laboriosam dolore ullam, necessitatibus a hic tenetur corrupti?</p>
+                    <p>Hello, I'm Farjana Rahman, a dedicated web developer. I have a strong passion for transforming
+                        ideas into functional websites that not only look visually appealing but also provide a seamless
+                        user experience. With my expertise in front-end development, back-end development, and various
+                        web technologies, I bring ideas to life and create engaging online experiences. I am constantly
+                        learning and staying up-to-date with the latest trends and best practices in web development to
+                        deliver high-quality and innovative solutions. Let's collaborate and bring your web projects to
+                        the next level!</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -46,128 +71,148 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Devlopment</span><br>Building Android/iOS apps</li>
+                            <li><span>Expertise</span><br>HTML5 | CSS3 | Tailwind CSS | Bootstrap</li>
+                            <li><span>Comfortable</span><br>JavaScript | MongoDB | Firebase Authentication | ES6 | React
+                                | React Router | Next.js</li>
+                            <li><span>Familiar</span><br>Node.js | Express.js</li>
+                            <li><span>Tools</span><br>VS Code, GitHub, Netlify, Firebase, Figma, Vercel</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2021-Current</span><br>UI/UX Design Training at SkillHub</li>
-                            <li><span>2019-2021</span><br>Team Lead</li>
-                            <li><span>2017-2019</span><br>UI/UX Design Executive</li>
+                            <li><span>2023 (Aug-Oct)</span><br>Done a team project under the project End Game</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2021</span><br>UI/UX Design Training in SkillHub</li>
-                            <li><span>2022</span><br>Graphic Designign Training at Sheikh Kamal IT Institute</li>
-                            <li><span>2023</span><br>Web Development Training at Programming Hero</li>
+                            <li><span>2019-2023</span><br>BSc in CSE in Metroplitan University</li>
+                            <li><span>2023</span><br>Complete Web Development Course under Programming Hero</li>
+                            <li><span>2022</span><br>Graphic Design Training under Sheikh Kamal IT Center</li>
+                            <li><span>2021</span><br>UI/UX Design Training under SkillHub</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<!-- --------services----------- -->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatibus quis necessitatibus eos mollitia</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-crop-simple"></i>
-                <h2>UI/UX Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatibus quis necessitatibus eos mollitia</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2>App Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatibus quis necessitatibus eos mollitia</p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ----portfolio------ -->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png" alt="">
-                <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, eaque!</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <!-- --------services----------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I specialize in building robust and responsive websites using the latest technologies. From
+                        front-end development with HTML, CSS, and JavaScript to back-end development with technologies
+                        like Node.js and MongoDB, I can create web solutions tailored to your needs.</p>
+                    <!-- <a href="#">Learn more</a> -->
                 </div>
-            </div>
-            <div class="work">
-                <img src="images/work-2.png" alt="">
-                <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, eaque!</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Designing user interfaces (UI) and ensuring a seamless user experience (UX) is crucial for the
+                        success of any digital product. I focus on creating visually appealing and user-friendly designs
+                        to enhance the overall experience of your web applications.</p>
+                    <!-- <a href="#">Learn more</a> -->
                 </div>
-            </div>
-            <div class="work">
-                <img src="images/work-3.png" alt="">
-                <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, eaque!</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Transform your ideas into intuitive and visually stunning mobile applications. I specialize in
+                        app design for various platforms, including iOS and Android. From wireframing to prototyping, I
+                        ensure a smooth design process to bring your app concept to life.</p>
+                    <!-- <a href="#">Learn more</a> -->
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
     </div>
-</div>
 
-<!-- ------Contact---------- -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
-                <p><i class="fa-solid fa-phone"></i> 01874826911</p>
-                <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
+    <!-- ----portfolio------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.jpg" alt="">
+                    <div class="layer">
+                        <h3>BloodBond Network</h3>
+                        <p><span class="w-p">Technologies:</span> Next.js | Express.js | Firebase Authentication | JWT |
+                            MongoDB</p>
+                        <a href="https://bloodbonds-network.vercel.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png" alt="">
+                    <div class="layer">
+                        <h3>Sportify</h3>
+                        <p><span class="w-p">Technologies:</span> React | React Router | Express.js | Firebase
+                            Authentication | MongoDB | JWT</p>
+                        <a href="https://sportify-academy-6d048.web.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.jpg" alt="">
+                    <div class="layer">
+                        <h3>RoboPlayground</h3>
+                        <p><span class="w-p">Technologies:</span> React | React Router | Express.js | Firebase
+                            Authentication | MongoDB</p>
+                        <a href="https://roboplayground-cbc31.web.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
             </div>
-            <a href="images/my-resume.pdf" download class="btn btn2">Download CV</a>
-            <div class="contact-right">
-                <form action="">
-                    <input type="text" name="name" id="name" placeholder="Your Name" required>
-                    <input type="email" name="email" id="email" placeholder="Your Email" >
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button class="btn btn2" type="submit" class="btn btn2">Submit</button>
-                </form>
-            </div>
+            <a href="#" class="w-btn">See more</a>
         </div>
     </div>
-    <div class="copyright">
-        <p>© 2023 Farjana Rahman. All Rights Reserved.</p>
+
+    <!-- ------Contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> rahmanfarjana313@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 01874826911</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/farjana.rahman.5074644/" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/rahman_farzz/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/farjana-rahman-79085b206/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/farjanarahman" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+
+                </div>
+                <!-- <a href="images/my-resume.pdf" download class="btn btn2">Download CV</a> -->
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" id="name" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="email" placeholder="Your Email">
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023 Farjana Rahman. All Rights Reserved.</p>
+        </div>
     </div>
-</div>
     <script>
         var tablinks = document.getElementsByClassName('tab-links');
         var tabcontents = document.getElementsByClassName('tab-contents');
 
-        function opentab(tabname){
-            for(tablink of tablinks){
+        function opentab(tabname) {
+            for (tablink of tablinks) {
                 tablink.classList.remove('active-link');
             }
-            for(tabcontent of tabcontents){
+            for (tabcontent of tabcontents) {
                 tabcontent.classList.remove('active-tab');
             }
             event.currentTarget.classList.add('active-link');
@@ -177,12 +222,85 @@
 
     <script>
         var sidemenu = document.getElementById("sidemenu");
-        function openmenu(){
+        function openmenu() {
             sidemenu.style.right = '0'
         }
-        function closemenu(){
+        function closemenu() {
             sidemenu.style.right = "-200px"
         }
     </script>
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Web Developer", "React Developer", "Full-stack Developer", "Frontend Developer"],
+            typeSpeed: 80,
+            backSpeed: 80,
+            loop: true
+        })
+    </script>
+    <!-- animation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var containers = document.querySelectorAll('.lottie-container');
+
+            containers.forEach(function (container) {
+                var animationPath = container.getAttribute('data-animation-path');
+                bodymovin.loadAnimation({
+                    container: container,
+                    renderer: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    path: animationPath
+                });
+            });
+        });
+    </script>
+    <!-- google sheet -->
+    <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyWoSJhkdaLx5wBRQVADpV28kbSW3GUEUJUi8qGPFaSEi6MfIao_SDVYi5YL6Xx8lA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset();
+                })
+                    
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script> -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyWoSJhkdaLx5wBRQVADpV28kbSW3GUEUJUi8qGPFaSEi6MfIao_SDVYi5YL6Xx8lA/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.result === 'success') {
+                        msg.innerHTML = "Message sent successfully";
+                        setTimeout(function () {
+                            msg.innerHTML = "";
+                        }, 5000);
+                        form.reset();
+                    } else {
+                        msg.innerHTML = "Error submitting the form";
+                    }
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+
+
+    </script>
 </body>
+
 </html>
